@@ -1,0 +1,10 @@
+<template>
+    <ul class="slds-m-around_medium">
+      <template for:each={orgs} for:item="org">
+        <lightning-card title={org.Name} icon-name="custom:custom14" key={org.Id}>
+          <c-demo-created org-from-parent={org}></c-demo-created>
+        </lightning-card>
+      </template>
+    </ul>
+  </template>
+  
